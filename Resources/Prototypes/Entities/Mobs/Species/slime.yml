@@ -12,19 +12,6 @@
   - type: Body
     prototype: Slime
     requiredLegs: 2
-  # they like eat it idk lol
-  - type: Storage
-    clickInsert: false
-    openOnActivate: false
-    grid:
-    - 0,0,1,2
-    maxItemSize: Large
-    storageInsertSound:
-      path: /Audio/Voice/Slime/slime_squish.ogg
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
   - type: UserInterface
     interfaces:
       enum.VoiceMaskUIKey.Key:
@@ -52,9 +39,6 @@
       enum.ThavenMoodsUiKey.Key: # impstation edit
         type: ThavenMoodsBoundUserInterface
         requireInputValidation: false
-  # to prevent bag open/honk spam
-  - type: UseDelay
-    delay: 0.5
   - type: HumanoidAppearance
     species: SlimePerson
   - type: Speech

@@ -4,20 +4,36 @@
   <Box>
     <GuideEntityEmbed Entity="MobSlimePerson" Caption=""/>
   </Box>
+## Slime core
 
-  They breathe nitrogen instead of oxygen, which is abundant in the station air, but harder to find compressed into gas tanks. They take significant damage if they are sprayed or splashed with water, but can
-  (and like other species, need to) drink it safely to stay hydrated.
-  They exhale nitrous oxide and are unaffected by it.
-  Their body can process 6 reagents at the same time instead of just 2.
+Slime People have a unique body structure, they do not have the typical set of internal organs most other species do,
+rather the [color=yellow]Slime core [/color](located within the stomach region) functions as their brain, heart, eyes, stomach, kidneys and liver.
 
-  Slimepeople have an [bold]internal 2x3 storage inventory[/bold] inside of their slime membrane. Anyone can see what's inside and take it out of you without asking,
-  so be careful.
+This core is capable of processing up to 6 reagents at a time compared to just 3 for most other species. 
 
-  Slimepeople have slight accelerated regeneration compared to other humanoids. They're also capable of hardening their fists, and as such have stronger punches,
-  although they punch a little slower.
+## Breathing
 
-  Their slime "blood" can not be regenerated from Iron. Slime Blood is technically a source of
-  moderately filling food for other species, although drinking the blood of your coworkers is usually frowned upon.
-  They suffocate 80% slower, but take pressure damage 9% faster. This makes them by far the species most capable to survive in hard vacuum. For a while.
+The only other organ they have are the gas sacs that function as their lungs,
+[color=#ffa500]they breathe nitrogen instead of oxygen[/color], which is plentiful in the station, but might be difficult to find in a compressed tank.
 
+They also take[color=#1e90ff] 80% less Asphyxiation [/color]damage.
+
+## Damage
+
+Due to their elastic form they are especialy resistant to blunt force, making them take[color=#1e90ff] 40% less blunt[/color] damage,
+but also take [color=#ffa500]20% more Slash and Pierce[/color] damage. 
+
+Their bodies are not suited for cold enviroments making them take [color=#ffa500]50% more cold [/color] damage.
+
+And their unique biology makes them take [color=#1e90ff]20% less Poison and 80% less Cellular[/color]  damage.
+
+[color=#1e90ff]They also begin regenerating health from below 65 damage and do so at nearly twice the rate of other species.[/color] 
+
+Being splashed with water also melts off part of their slime, making them take minor heat damage,
+but still can and are required to drink it.  
+
+## Blood
+
+Their slime "blood" can be regenerated from Iron and is technically a source of moderately filling food for other species,
+although drinking the blood of your coworkers is usualy frowned upon.
 </Document>

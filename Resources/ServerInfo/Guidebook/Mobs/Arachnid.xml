@@ -5,11 +5,28 @@
     <GuideEntityEmbed Entity="MobArachnid" Caption=""/>
   </Box>
 
-  They have two additional Pocket slots in their inventory. They can eat raw meat without any ill effects, but some foods like chocolate and onion poisons them.
-  They suffocate 50% faster, and their Blue Blood can't be metabolised from Iron, being based on Copper instead.
+## Metabolism
 
-  Their unarmed attacks deal Piercing damage instead of Blunt.
+Reagents within the body are [color=yellow]metabolized 50% slower[/color], affecting everything from eating and drinking to getting healed by medicine or poisoned by toxins. 
 
+The distinct blue blood of Aracnids is metabolized from[color=yellow] Copper[/color], while[color=#ffa500] Iron poisons[/color] them instead. 
+
+Their robust digestive system allows them to [color=#1e90ff]eat raw meat and drink blood without ill effects.[/color]
+
+They have a unique [color=#1e90ff]immunity to Mechanotoxin[/color], a venom produced by most spiders.
+
+## Breathing 
+
+Due to the structure of their lungs, they take[color=#ffa500] 50% more Asphyxiation damage and recovers from it at only the half speed.[/color]
+
+## Arachnid bite
+
+When unarmed, they bite rather than punch, dealing pierce damage instead of blunt.  
+
+## Extra pockets
+
+They have [color=#1e90ff]additional 2 free pocket slots[/color], however these are visible to everyone upon inspection.
+  
   ## Sericulture
 
   <Box>
@@ -19,7 +36,15 @@
     <GuideEntityEmbed Entity="WallWeb" Caption=""/>
   </Box>
 
-  Arachnids can create Websilk at the cost of getting more hungry. They (and only they) can craft bundles of websilk into various items from clothing and shields to entire walls.
+  Arachnids can weave silk at the expense of hunger, only they are capable of using silk for crafting.
 
+  Examples of craftable items being:
 
+[color=yellow]Silk woven cloth[/color] - used in multiple crafting recipes but notably can be used to make gauzes for healing. 
+
+[color=yellow]Web clothing [/color]- jumpsuits and winter clothing, alongside a handheld shield that offers a small amount of protection.
+
+[color=yellow]Web furniture [/color]- beds, chairs, tables and even crates. 
+
+[color=yellow]Web walls, doors and floor tiles[/color] - solid walls and floor tiles capable of holding in atmosphere.  
 </Document>

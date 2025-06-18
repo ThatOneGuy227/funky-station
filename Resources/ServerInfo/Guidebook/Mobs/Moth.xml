@@ -4,12 +4,20 @@
   <Box>
     <GuideEntityEmbed Entity="MobMoth" Caption=""/>
   </Box>
+## Diet
+  Moths have an exclusive cloth diet. They cannot eat most things that other species can, however they can eat clothing, gloves and other wearable items.
+  In addition, chefs can prepare moth specific food recipes for them.
+  
+  Due to this they also cannot eat pills without disolving them in water first. 
+ 
+  Their insect blood is metabolised from iron like regular blood. 
 
-  They can eat cotton, fabrics and clothing, but virtually none of the food that others would consider "edible". They prefer a somewhat lower temperature range than humans.
-  Their Insect Blood can't be metabolised from Iron like normal blood.
+## Wings
+  Their wings give them better acceleration if there is no gravity on the station, but they still can't move without equipment when floating out in space.  
+  
+## Temperature   
+   Their fuzzy coats make them prefer a somewhat lower temperature range than most other species.They take [color=#1e90ff]30% less Cold damage[/color] 
+   but [color=#ffa500]30% more Heat damage, and take significantly more damage if caught on fire[/color].
 
-  Their wings give them better acceleration if there is no gravity on the station, but they still can't move without equipment when floating out in space.
-
-  They take [color=#1e90ff]30% less Cold damage[/color] but [color=#ffa500]30% more Heat damage, and catch on fire more easily[/color].
 
 </Document>
