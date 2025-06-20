@@ -41,6 +41,7 @@
   - type: Tag
     tags:
     - Recyclable
+  - type: StatusIcon #imp edit. for the salvohud
 
 - type: entity
   parent: BaseStructure
@@ -81,6 +82,7 @@
           - MachineMask
         layer:
           - MachineLayer
+  - type: StatusIcon #imp edit. for the salvohud
 
 - type: entity
   parent: BaseScrap

@@ -66,6 +66,10 @@ using Content.Shared.Glasses;
 using Content.Shared.XRay;
 using Content.Shared._EE.Overlays.Switchable; // EE edit
 using Content.Shared._Goobstation.Flashbang; // Funky - Goob flash vulnerability
+using Content.Shared._EE.Overlays.Switchable;
+using Content.Shared._Impstation.SalvoHud;
+using Content.Shared.Mobs; // EE edit
+using Content.Shared.Zombies;
 
 namespace Content.Shared.Inventory;
 
@@ -117,6 +121,7 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowCriminalRecordIconsComponent>>(RefRelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<BlackAndWhiteOverlayComponent>>(RefRelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<NoirOverlayComponent>>(RefRelayInventoryEvent);
+        SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowMaterialCompositionIconsComponent>>(RefRelayInventoryEvent); // imp edit
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<NightVisionComponent>>(RefRelayInventoryEvent); // EE edit
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ThermalVisionComponent>>(RefRelayInventoryEvent); // EE edit
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ImageOverlayComponent>>(RefRelayInventoryEvent);

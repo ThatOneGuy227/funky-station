@@ -95,6 +95,7 @@
       - HumanoidSilicon
   - type: StackPrice
     price: 2
+  - type: StatusIcon #imp edit. for the salvohud
 
 - type: entity
   parent: SheetGlassBase

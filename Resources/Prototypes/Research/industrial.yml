@@ -49,6 +49,7 @@
   - MineralScannerEmpty
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
+  - ClothingEyesHudSalvage #imp
 
 - type: technology
   id: SpaceScanning

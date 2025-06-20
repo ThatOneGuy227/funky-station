@@ -66,6 +66,7 @@
   - type: GuideHelp
     guides:
     - ExpandingRepairingStation
+  - type: StatusIcon #imp edit. for the salvohud
 
 - type: entity
   parent: SheetMetalBase

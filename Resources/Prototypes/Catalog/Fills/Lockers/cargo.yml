@@ -39,7 +39,7 @@
       - id: NitrogenTankFilled
       - id: ClothingShoesBootsMag
       - id: ClothingMaskGasExplorer
-      - id: ClothingEyesGlassesMeson
+      - id: ClothingEyesHudSalvage #imp edit - give salvagers the salvohud!
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
       - id: AppraisalTool
@@ -56,7 +56,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesGlassesMeson
+      - id: ClothingEyesHudSalvage #imp edit - give salvagers the salvohud!
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
       - id: AppraisalTool
