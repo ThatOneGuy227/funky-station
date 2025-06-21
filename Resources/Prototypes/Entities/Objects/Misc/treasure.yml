@@ -98,6 +98,7 @@
      Silver: 1000
   - type: StaticPrice
     price: 3500
+  - type: NonMobStatusIcon #imp edit. for the salvohud  
 
 - type: entity
   parent: BaseItem
@@ -168,7 +169,7 @@
       Steel: 400
   - type: StaticPrice
     price: 200
-  - type: StatusIcon #imp edit. for the salvohud
+  - type: NonMobStatusIcon #imp edit. for the salvohud
 
 - type: entity
   parent: TreasureCoinIron

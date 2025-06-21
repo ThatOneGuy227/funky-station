@@ -20,7 +20,7 @@
         volume: -10
 
 - type: entity
-  parent: [ClothingEyesBase, BaseLensSlot, ShowSalvageIcons]
+  parent: [ClothingEyesBase, ShowSalvageIcons]
   id: ClothingEyesHudSalvage
   name: S.A.L.V.O hud
   description: A heads-up display that scans for valuable materials in the nearby area. nobody knows what the acronym means.
