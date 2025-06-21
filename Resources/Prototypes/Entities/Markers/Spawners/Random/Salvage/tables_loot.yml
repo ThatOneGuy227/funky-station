@@ -1,5 +1,4 @@
 # Scrap: Worthless items that can be recycled into materials
-
 - type: entityTable
   id: SalvageScrapLowValue
   table: !type:GroupSelector
@@ -35,7 +34,6 @@
       weight: 0.5
       amount: !type:RangeNumberSelector
         range: 1, 3
-
 - type: entityTable
   id: SalvageScrapHighValue
   table: !type:GroupSelector
@@ -58,10 +56,12 @@
     - id: SheetPlasma10
       weight: 0.2
     - id: ArtifactFragment1
+      weight: 0.05
       weight: 0.20
       amount: !type:RangeNumberSelector
         range: 1, 10
     - id: SheetPlasteel10
+      weight: 0.05
       weight: 0.10
 
 - type: entityTable
@@ -79,9 +79,7 @@
       weight: 0.5
     - id: ScrapMopBucket
       weight: 0.5
-
 # Treasure: High-value scatterables that don't do a ton.
-
 - type: entityTable
   id: SalvageTreasureCommon
   table: !type:GroupSelector
@@ -97,7 +95,6 @@
         range: 1, 2
     - !type:NestedSelector
       tableId: RandomInstrumentTable
-
 - type: entityTable
   id: SalvageTreasureUncommon
   table: !type:GroupSelector
@@ -113,7 +110,6 @@
       children:
       - id: TreasureCDDrive
       - id: TreasureHardDiskDrive
-      - id: TreasureFlopDiskDrive
     - !type:NestedSelector
       tableId: TreasureCoinPile
       rolls: !type:RangeNumberSelector
@@ -122,7 +118,6 @@
     - id: WristwatchGold
     - !type:NestedSelector
       tableId: RingTableCommon
-
 - type: entityTable
   id: SalvageTreasureRare
   table: !type:GroupSelector
@@ -154,7 +149,6 @@
           weight: 1
     - !type:NestedSelector
       tableId: RingTableRare
-
 - type: entityTable
   id: SalvageTreasureLegendary
   table: !type:GroupSelector
@@ -170,10 +164,10 @@
       tableId: RingTableRare
       rolls: !type:RangeNumberSelector
         range: 2, 3
-
 # Equipment: Tools and things used by salvagers. Quote unquote "Gamer Loot"
 
 - type: entityTable
+  id: SalvageEquipmentCommon
   id: SalvageEquipmentCommon # Mostly misc items,tools and clothing 
   table: !type:GroupSelector
     children:
@@ -223,6 +217,7 @@
   table: !type:GroupSelector
     children:
     - id: OreBag
+    - id: HandheldGPSBasic
     - id: HandHeldMassScanner
       weight: 0.25
     - id: PowerCellHighPrinted
@@ -237,38 +232,45 @@
     - id: Katana
     - id: WeaponProtoKineticAccelerator
       weight: 0.5
+    - id: WelderIndustrial
     - id: WeaponGrapplingGun
     - !type:GroupSelector
       children:
       - id: ClothingHeadHatWelding
+      - id: ClothingHeadHatWeldingMaskFlame
       - id: ClothingOuterHardsuitPirateEVA
         weight: 0.25
       - id: ClothingHeadHatWeldingMaskFlameBlue
         weight: 0.25
+      - id: ClothingHeadHatWeldingMaskPainted
       - id: ClothingOuterHardsuitPirateCap
         weight: 0.1
 - type: entityTable
-  id: SalvageEquipmentRare # Now getting into some proper eqiupment here, Merc armors are secoff equipment but green, at least it makes it obious where you got it from 
+  id: SalvageEquipmentRare 
   table: !type:GroupSelector
     children:
+    - id: BlueprintDoubleEmergencyTank
     - id: SeismicCharge
     - id: Fulton
       amount: !type:RangeNumberSelector
         range: 1, 3
-    - id: ClothingBeltSalvageWebbing    
-    - id: ClothingEyesGlassesMercenary
-    - id: ClothingMaskGasMerc
-    - id: ClothingHeadHelmetMerc
-    - id: ClothingOuterVestWebMerc
-      weight: 0.45
-    - id: ClothingHandsMercGlovesCombat
+    - id: HandHeldMassScanner
+    - id: MiningDrill
+    - id: ClothingEyesGlassesMeson
+    - id: ClothingBeltSalvageWebbing
+    - id: Machete
+      weight: 0.5
+    - id: KukriKnife
+      weight: 0.5
+    - id: Cutlass
+      weight: 0.5
+    - id: Sledgehammer
+      weight: 0.5
+    - id: Katana
       weight: 0.25
-    - id: ClothingBeltMercWebbing
-    - id: ClothingShoesBootsMerc
-    - id: CigPackSyndicate # Only the best 
-      weight: 0.25
-    - id: ToolDebug # Spanish Army Knife, not actualy sure why this is considered a debug tool, its cool
-      weight: 0.1
+    - id: SeismicCharge
+    - id: MineralScanner
+      weight: 0.5
     - !type:GroupSelector # The iconic arms of salvagers
       children:
        - id: WeaponCrusherDagger  
@@ -284,33 +286,33 @@
       - id: DoubleEmergencyNitrogenTankFilled
         weight: 0.5
       - id: DoubleEmergencyOxygenTankFilled
+
 - type: entityTable
-  id: SalvageEquipmentLegendary # The Fun Stuff
+  id: SalvageEquipmentLegendary
   table: !type:GroupSelector 
     children:
-    - id: WeaponRevolverPirate 
-    - id: WeaponRevolverRattler
-    - id: WeaponRevolverInspector
-    - id: WeaponPistolN1984 
-    - id: WeaponLaserGun # Retro Laser Blaster
-    - id: WeaponRevolverHristov 
+    - id: AdvancedMineralScanner
+    - id: CratePermaEscapeSpawner
+    - id: CrateFoodPizzaLarge
+    - id: ClothingBackpackSatchelSmugglerUnanchored
+    - id: SyndicateBusinessCard
+      weight: 0.05
+    - id: ClothingEyesGlassesMercenary
+      weight: 0.05
+    - id: ClothingMaskGasMerc
       weight: 0.15
-    - id: Musket 
-    - id: WeaponPistolFlintlock 
-    - id: WeaponShotgunBlunderbuss
-    - id: WeaponMakeshiftLaser
-    - id: WeaponEnergyGunEnergyPistol # Miniuture Laser Pistol
-    - id: WeaponLaserSvalinn 
-      weight: 0.50
-    - id: EnergyCutlass
-    - id: FireAxeFlaming 
-    - id: WeaponRifleAk
-      weight: 0.50
-    - id: WeaponShotgunKammerer
-    - id: WeaponLauncherRocket # "Is that a motherfucking RPG? You got a motherfucking RPG?! AN RPG IN YOUR MOTHERFUCKING BACKPACK?!"
+    - id: ClothingHeadHelmetMerc
       weight: 0.25
-    - id: WeaponLauncherPirateCannon 
-      weight: 0.50
+    - id: ClothingOuterVestWebMerc
+      weight: 0.15
+    - id: ClothingHandsMercGlovesCombat
+      weight: 0.05
+    - id: ClothingBeltMercWebbing
+      weight: 0.25
+    - id: ClothingShoesBootsMerc
+      weight: 0.15
+    - id: ToolDebug # Spanish Army Knife, not actualy sure why this is considered a debug tool, its cool
+      weight: 0.01
     - !type:GroupSelector
       children:
       - id: ClothingOuterHardsuitSalvage
