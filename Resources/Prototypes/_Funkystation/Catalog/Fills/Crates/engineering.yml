@@ -37,3 +37,15 @@
      - id: RCD
      - id: RCDAmmo     
      - id: HolofanProjector
+
+- type: entity
+  id: CrateBasicHardsuit
+  parent: CrateCommandSecure
+  name: basic hardsuit kit
+  description: A crate containing a basic hardsuit, rated for civilian use.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitBasic
+      - id: NitrogenTankFilled 
+      - id: OxygenTankFilled    
