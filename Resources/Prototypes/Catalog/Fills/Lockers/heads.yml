@@ -239,9 +239,9 @@
     - id: MedkitFilled
     - id: RubberStampCMO
     # Goobstation
-    - id: CloningPodMachineCircuitboard
+    #- id: CloningPodMachineCircuitboard
     - id: MedicalScannerMachineCircuitboard
-    - id: CloningConsoleComputerCircuitboard
+    #- id: CloningConsoleComputerCircuitboard
     - id: BiomassReclaimerMachineCircuitboard
     - id: MedTekCartridge
     # Shitmed

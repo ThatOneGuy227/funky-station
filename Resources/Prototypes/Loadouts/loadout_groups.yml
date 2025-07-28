@@ -268,7 +268,6 @@
   name: loadout-group-bartender-outerclothing
   minLimit: 0
   loadouts:
-  - BartenderVest
   - BartenderApron
   - BartenderWintercoat
 
@@ -1165,6 +1164,14 @@
   - SecurityPDA
   - SeniorOfficerPDA
 
+# Funkystation
+- type: loadoutGroup
+  id: DetectivePDA
+  name: loadout-group-detective-id
+  loadouts:
+  - DetectivePDA
+  - SeniorDetectivePDA
+
 - type: loadoutGroup
   id: DetectiveHead
   name: loadout-group-detective-head
@@ -1447,8 +1454,8 @@
   id: BoxerJumpsuit
   name: loadout-group-boxer-jumpsuit
   loadouts:
-  - BoxerShorts
   - BoxerShortsWithTop
+  - BoxerShorts
 
 - type: loadoutGroup
   id: BoxerGloves

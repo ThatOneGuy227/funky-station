@@ -45,5 +45,21 @@
       - FoodFrozenSnowconeRainbow
       - FoodSnackPistachios
       - FoodSnackSemki
+      - FoodSnackSwirlLollipop
+      - FoodSnackLunacakeWrapped
+      - FoodSnackMochicakeWrapped
+      - FoodSnackMooncakeWrapped
+      - FoodSnackTidegobs
+      - FoodSnackJoveGello
+      - FoodSnackPlutoniumrods
+      - FoodSnackMarsFrouka
+      - FoodSnackVenusianhotcakes
+      - FoodSnackOortrocks
+      - FoodSnackRedalertnuts
+      - FoodSnackRicecake
+      - FoodSnackPokeysticks
+      - FoodSnackChocobanana
+      - FoodSnackDango
+      - FoodSnackProteinbar
     chance: 0.8
     offset: 0.0
