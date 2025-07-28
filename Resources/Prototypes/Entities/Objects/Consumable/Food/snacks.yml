@@ -553,7 +553,7 @@
     - Trash
   - type: PhysicalComposition
     materialComposition:
-      Steel: 100
+      Plastic: 75
   - type: SpaceGarbage
   - type: StaticPrice
     price: 0
