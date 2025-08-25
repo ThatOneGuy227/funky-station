@@ -220,8 +220,10 @@
   metabolisms:
     Drink:
       effects:
-      - !type:SatiateThirst
-        factor: 1.5
+      - !type:SatiateThirst # Funky Change
+        factor: 4
+      - !type:SatiateHunger # Funky Change 
+        factor: 4   
     # Dragon doesn't require airloss healing, so omnizine is still best for humans. - Funkychem changes this, as chem if they have literal hours can make it. VERY hard.
     Medicine:
       metabolismRate: 0.2 # Funkychem
@@ -238,6 +240,10 @@
         # types:
       - !type:ModifyBleedAmount
         amount: -1.5
+      - !type:SatiateThirst # Funky Change
+        factor: 4
+      - !type:SatiateHunger # Funky Change
+        factor: 4 
   # Just in case you REALLY want to water your plants
   plantMetabolism:
   - !type:PlantAdjustWater
