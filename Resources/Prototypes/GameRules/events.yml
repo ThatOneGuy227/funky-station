@@ -97,6 +97,7 @@
     - id: SpiderSpawn
     - id: HonkbotSpawn
     - id: VentClog
+    - id: MalignRiftSpawn # Funky
 
 - type: entityTable
   id: BasicAntagEventsTable
@@ -115,6 +116,7 @@
     - id: FalseAlarm
     - id: DerelictCyborgSpawn
     - id: WizardSpawn
+    - id: ColossusSpawn # Funky
 
 - type: entity
   id: BaseStationEvent

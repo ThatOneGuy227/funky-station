@@ -13,6 +13,7 @@
 // SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
+// SPDX-FileCopyrightText: 2025 YaraaraY <158123176+YaraaraY@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 pa.pecherskij <pa.pecherskij@interfax.ru>
 // SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
 //
@@ -20,6 +21,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
+using Content.Shared._Funkystation.Genetics.Mutations.Components;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Damage;
 using Content.Shared.Hands.Components;
@@ -29,6 +31,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared.Interaction;
 
 namespace Content.Shared.DoAfter;
 
@@ -53,6 +56,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
         SubscribeLocalEvent<DoAfterComponent, EntityUnpausedEvent>(OnUnpaused);
         SubscribeLocalEvent<DoAfterComponent, ComponentGetState>(OnDoAfterGetState);
         SubscribeLocalEvent<DoAfterComponent, ComponentHandleState>(OnDoAfterHandleState);
+        SubscribeLocalEvent<GetInteractingEntitiesEvent>(OnGetInteractingEntities);
     }
 
     private void OnUnpaused(EntityUid uid, DoAfterComponent component, ref EntityUnpausedEvent args)
@@ -149,6 +153,25 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
             EnsureComp<ActiveDoAfterComponent>(uid);
     }
 
+    /// <summary>
+    /// Adds entities which have an active DoAfter matching the target.
+    /// </summary>
+    private void OnGetInteractingEntities(ref GetInteractingEntitiesEvent args)
+    {
+        var enumerator = EntityQueryEnumerator<ActiveDoAfterComponent, DoAfterComponent>();
+        while (enumerator.MoveNext(out _, out var comp))
+        {
+            foreach (var doAfter in comp.DoAfters.Values)
+            {
+                if (doAfter.Cancelled || doAfter.Completed)
+                    continue;
+
+                if (doAfter.Args.Target == args.Target)
+                    args.InteractingEntities.Add(doAfter.Args.User);
+            }
+        }
+    }
+
     #region Creation
     /// <summary>
     ///     Tasks that are delayed until the specified time has passed
@@ -215,6 +238,15 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
         }
 
         id = new DoAfterId(args.User, comp.NextId++);
+
+        // Funkystation - Genetics DoAfter Modifier Mutation
+        if (TryComp<MutationDoAfterModifierComponent>(args.User, out var modComp))
+        {
+            var newSeconds = args.Delay.TotalSeconds * modComp.Multiplier;
+            args.Delay = TimeSpan.FromSeconds(newSeconds);
+        }
+        // End of Funkystation changes
+
         var doAfter = new DoAfter(id.Value.Index, args, GameTiming.CurTime);
 
         // Networking yay

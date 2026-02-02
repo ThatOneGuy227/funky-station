@@ -56,6 +56,10 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+  alternateTitles:
+  - NanotrasenRepresentativeCorporateLiaison
+  - NanotrasenRepresentativeNanotrasenComplianceExecutive
+  - NanotrasenRepresentativeNanotrasenAdvisor
 
 - type: startingGear
   id: NanotrasenRepresentativeGear
@@ -63,7 +67,21 @@
     id: NanotrasenRepresentativePDA
     ears: ClothingHeadsetAltCentCom
     pocket1: UniqueNanorepLockerTeleporter
+    belt: ClothingBeltStorageWaistbag
   storage:
     back:
     - Flash
     - BluespaceLifelineImplanter
+    - BoxFolderCentComClipboard
+
+- type: jobAlternateTitle
+  id: NanotrasenRepresentativeCorporateLiaison
+  name: job-name-alt-ntr-1
+
+- type: jobAlternateTitle
+  id: NanotrasenRepresentativeNanotrasenComplianceExecutive
+  name: job-name-alt-ntr-2
+
+- type: jobAlternateTitle
+  id: NanotrasenRepresentativeNanotrasenAdvisor
+  name: job-name-alt-ntr-3

@@ -22,6 +22,7 @@
 # SPDX-FileCopyrightText: 2025 88tv <131759102+88tv@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 8tv <eightev@gmail.com>
 # SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 DESKTOP-0V0K4HQ\Rosy <rosysaturniidae@gmail.com>
 # SPDX-FileCopyrightText: 2025 Dani <57107055+wgreen84@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Dani Green <wgreen84gamergame@gmail.com>
 # SPDX-FileCopyrightText: 2025 Fr0goo <153249069+Fr0goo@users.noreply.github.com>
@@ -30,6 +31,7 @@
 # SPDX-FileCopyrightText: 2025 MaiaArai <158123176+YaraaraY@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 PoquitoDondito <danielchristianstone@gmail.com>
 # SPDX-FileCopyrightText: 2025 Princess Cheeseballs <66055347+Princess-Cheeseballs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 RosySaturniidae <rosysaturniidae@gmail.com>
 # SPDX-FileCopyrightText: 2025 SaffronFennec <firefoxwolf2020@protonmail.com>
 # SPDX-FileCopyrightText: 2025 SigmaTheDragon <162711378+SigmaTheDragon@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Tay <td12233a@gmail.com>
@@ -48,6 +50,11 @@
 # SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
 # SPDX-FileCopyrightText: 2025 vectorassembly <vectorassembly@icloud.com>
 # SPDX-FileCopyrightText: 2025 w.xyz() <84605679+pirakaplant@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2026 Frogoo <153249069+Fr0goo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2026 ThatOneMoon <91613003+ThatOneMoon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2026 ThatOneMoon <juozas.dringelis@gmail.com>
+# SPDX-FileCopyrightText: 2026 Zergologist <114537969+Chedd-Error@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2026 zergologist <114537969+Chedd-Error@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
@@ -60,6 +67,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainShoes
   - Survival
   - Trinkets
   - CaptainJobTrinkets
@@ -73,6 +81,7 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - HoPShoes
   - Glasses
   - Survival
   - Trinkets
@@ -94,13 +103,14 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
+  - GenericHats
   - PassengerJumpsuit
   - CommonBackpack
   - PassengerNeck
   - PassengerFace
   - PassengerGloves
   - PassengerOuterClothing
-  - PassengerShoes
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -113,7 +123,9 @@
   - BartenderHead
   - BartenderJumpsuit
   - CommonBackpack
+  - Gloves
   - BartenderOuterClothing
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -123,8 +135,11 @@
 - type: roleLoadout
   id: JobServiceWorker
   groups:
-  - BartenderJumpsuit
+  - GenericHats
+  - ServiceJumpsuit
   - CommonBackpack
+  - Gloves
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -138,7 +153,9 @@
   - ChefMask
   - ChefJumpsuit
   - CommonBackpack
+  - Gloves
   - ChefOuterClothing
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -150,6 +167,8 @@
   groups:
   - LibrarianJumpsuit
   - CommonBackpack
+  - Gloves
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -162,6 +181,8 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
+  - Gloves
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -179,6 +200,7 @@
   - CommonBackpack
   - ChaplainOuterClothing
   - ChaplainBelt # imp
+  - GenericShoes # funky
   - Glasses
   - Survival
   - ChaplainBible # Funky
@@ -205,10 +227,12 @@
 - type: roleLoadout
   id: JobBotanist
   groups:
-  - BotanistHead
+  - GenericHats
   - BotanistJumpsuit
   - BotanistBackpack
+  - Gloves
   - BotanistOuterClothing
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -223,6 +247,7 @@
   - ClownMask
   - ClownJumpsuit
   - ClownBackpack
+  - Gloves
   - ClownOuterClothing
   - ClownShoes
   - Glasses
@@ -238,6 +263,7 @@
   - MimeMask
   - MimeJumpsuit
   - MimeBackpack
+  - Gloves
   - MimeOuterClothing
   - MimeBelt
   - Glasses
@@ -251,7 +277,9 @@
   groups:
   - MusicianJumpsuit
   - CommonBackpack
+  - Gloves
   - MusicianOuterClothing
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -270,7 +298,7 @@
   - QuartermasterOuterClothing
   - QuartermasterShoes
   - Glasses
-  - Survival
+  - SurvivalSalvageExtended
   - Trinkets
   - QuartermasterJobTrinkets
   - GroupSpeciesBreathTool
@@ -282,6 +310,7 @@
   - CargoTechnicianNeck
   - CargoTechnicianJumpsuit
   - CargoTechnicianBackpack
+  - Gloves
   - CargoTechnicianOuterClothing
   - CargoTechnicianShoes
   - CargoPDA
@@ -299,9 +328,8 @@
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
-  - CargoPDA
   - Glasses
-  - Survival
+  - SurvivalSalvageExtended
   - Trinkets
   - SalvageSpecialistJobTrinkets
   - GroupSpeciesBreathTool
@@ -460,6 +488,7 @@
   - SecurityJobTrinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - LoadoutSecurityOfficerWeapon
 
 - type: roleLoadout
   id: JobDetective
@@ -500,7 +529,7 @@
   - MedicalMask
   - MedicalDoctorGlasses #Funky
   - ChiefMedicalOfficerJumpsuit
-  - MedicalGloves
+  - ChemistGloves
   - MedicalBackpack
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
@@ -547,12 +576,12 @@
   - MedicalChemistHead
   - MedicalMask
   - MedicalChemistGlasses #Funky
-  - ChemistJumpsuit
-  - MedicalGloves
-  - ChemistBackpack
   - MedicalNeck
+  - ChemistJumpsuit
+  - ChemistGloves
+  - ChemistBackpack
   - ChemistOuterClothing
-  - MedicalShoes
+  - ChemistShoes
   - SurvivalMedical
   - Trinkets
   - ChemistJobTrinkets
@@ -563,7 +592,7 @@
   groups:
   - ParamedicHead
   - MedicalMask
-  - MedicalDoctorGlasses #Funky
+  - ParamedicGlasses #Funky
   - ParamedicJumpsuit
   - MedicalGloves
   - MedicalBackpack
@@ -581,6 +610,7 @@
   id: JobZookeeper
   groups:
   - CommonBackpack
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
@@ -590,9 +620,12 @@
 - type: roleLoadout
   id: JobReporter
   groups:
+  - GenericHats
   - ReporterJumpsuit
   - ReporterOuterClothing # Goobstation - Bodycams
   - CommonBackpack
+  - Gloves
+  - GenericShoes
   - Glasses
   - Survival
   - Trinkets
