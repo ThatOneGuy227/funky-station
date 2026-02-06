@@ -708,19 +708,19 @@
 #      - ToySidearm
 
 # Security
-- type: cargoBountyCategory
-  id: securityCategory
-  name: bounty-category-security
-  entries:
-  - name: bounty-item-disabler-smg
-    minAmount: 2
-    maxAmount: 6
-    rewardPer: 3500
-    whitelist:
-      tags:
-      - DisablerSMG
-    requiredResearch:
-      - AdvancedRiotControl
+#- type: cargoBountyCategory
+#  id: securityCategory
+#  name: bounty-category-security
+#  entries:
+#  - name: bounty-item-disabler-smg
+#    minAmount: 2
+#    maxAmount: 6
+#    rewardPer: 3500
+#    whitelist:
+#      tags:
+#      - DisablerSMG
+#    requiredResearch:
+#      - AdvancedRiotControl
   - name: bounty-item-truncheon
     minAmount: 4
     maxAmount: 8
