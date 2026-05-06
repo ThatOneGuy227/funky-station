@@ -36,13 +36,14 @@
 # SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 takemysoult <143123247+takemysoult@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 LucasTheDrgn <kirbyfan.95@gmail.com>
+# SPDX-FileCopyrightText: 2025 MaiaArai <158123176+YaraaraY@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 PurpleTranStar <purpletranstars@gmail.com>
 # SPDX-FileCopyrightText: 2025 Starry <202317940+PurpleTranStar@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Starry <tehevilduckiscoming@gmail.com>
-# SPDX-FileCopyrightText: 2025 Xcybitt <197952719+Xcybitt@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 YaraaraY <158123176+YaraaraY@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
+# SPDX-FileCopyrightText: 2026 Xcybitt <197952719+Xcybitt@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
@@ -292,11 +293,11 @@
           reagent: Nicotine
           min: 20
         reagent: Nicotine
-        amount: 0.45
+        amount: 0.475 #how did i never fucking notice that you can't tick up nicotine in this state FMLLLLLLLLL, this was 0.45. When like, the reagent was slowly processing 0.05 per tick, and cigs insert 0.1u per two ticks...
       - !type:Emote
         conditions:
         - !type:ReagentThreshold
-          min: 40
+          min: 25 #should take like a bit of time smoking after hitting the 20u part to hit here, first warning state
         emote: Cough
         probability: 0.05
       - !type:HealthChange
@@ -597,6 +598,13 @@
           min: 20
         walkSpeedModifier: 0.35
         sprintSpeedModifier: 0.35
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: 1
+      - !type:Emote
+        emote: Gasp
+        probability: 0.08
 
 - type: reagent
   id: Happiness
